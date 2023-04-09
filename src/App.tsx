@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC, useEffect, useRef, useState } from "react";
+import { ComponentsData } from "./types";
+import { Header } from "./components/Header/Header";
+import { WorkExperience } from "./components/WorkExperience/WorkExperience";
+import { Workshops } from "./components/Workshops/Workshops";
+import { Skills } from "./components/Skills/Skills";
+import { Projects } from "./components/Projects/Projects";
+import { Languages } from "./components/Languages/Languages";
+import { DownloadPDF } from "./components/DownloadPDF/DownloadPDF";
 
-function App() {
+const JSON_DATA_PATH = "/data.json";
+
+const App: FC = () => {
+  const rootRef = useRef<HTMLDivElement>(null);
+  const [componentsData, setComponentsData] = useState<ComponentsData>();
+
+  useEffect(() => {
+    fetch(JSON_DATA_PATH)
+      .then((r) => r.json() as Promise<ComponentsData>)
+      .then((data) => setComponentsData(data));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {!componentsData ? (
+        "Loading..."
+      ) : (
+        <div ref={rootRef}>
+          <Header {...componentsData.header} />
+          <div className="content">
+            <div className="left">
+              <WorkExperience {...componentsData.workExperience} />
+              <Workshops {...componentsData.workshops} />
+            </div>
+            <div className="right">
+              <Skills {...componentsData.skills} />
+              <Projects {...componentsData.projects} />
+              <Languages {...componentsData.languages} />
+            </div>
+          </div>
+          <DownloadPDF contentRef={rootRef} />
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default App;
