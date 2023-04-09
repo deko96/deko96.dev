@@ -1,0 +1,199 @@
+{
+  "header": {
+    "headline": "Dejan Bozhinoski",
+    "title": "Senior Web Engineer",
+    "subtitle": "Enthusiastic geek with 6+ years of web development experience",
+    "photoUrl": "/me.webp",
+    "contacts": [
+      {
+        "type": "email",
+        "href": "mailto:bozhinoski996@gmail.com",
+        "text": "bozhinoski996@gmail.com"
+      },
+      {
+        "type": "phone",
+        "href": "tel:+38972311480",
+        "text": "+389 72 311 480"
+      },
+      {
+        "type": "location",
+        "text": "Skopje, Macedonia"
+      },
+      {
+        "type": "linkedIn",
+        "href": "https://linkedin.com/in/dejan-bo%C5%BEinoski-158454177",
+        "text": "linkedin.com/in/dejan-božinoski-158454177"
+      },
+      {
+        "type": "github",
+        "href": "https://github.com/deko96",
+        "text": "deko96"
+      },
+      {
+        "type": "website",
+        "href": "https://deko.sh",
+        "text": "deko96.github.io"
+      }
+    ]
+  },
+  "workExperience": {
+    "title": "Work Experience",
+    "data": [
+      {
+        "title": "Senior JavaScript Developer",
+        "company": {
+          "name": "Intertec.io",
+          "url": "https://intertec.io"
+        },
+        "startDate": "2022-03-01"
+      },
+      {
+        "title": "Intermediate JavaScript Developer",
+        "company": {
+          "name": "Intertec.io",
+          "url": "https://intertec.io"
+        },
+        "startDate": "2021-07-01",
+        "endDate": "2022-03-01"
+      },
+      {
+        "title": "Web Engineer & System Administrator",
+        "company": {
+          "name": "Digital Orange",
+          "url": "https://digital-orange.com"
+        },
+        "startDate": "2019-09-01",
+        "endDate": "2021-07-01"
+      },
+      {
+        "title": "Lead Backend Developer",
+        "company": {
+          "name": "Digital Present",
+          "url": "https://digitalpresent.io"
+        },
+        "startDate": "2019-01-01",
+        "endDate": "2019-07-01"
+      },
+      {
+        "title": "Fullstack Web Developer",
+        "company": {
+          "name": "Centkom",
+          "url": "https://centkom.mk"
+        },
+        "startDate": "2017-01-01",
+        "endDate": "2019-01-01"
+      },
+      {
+        "title": "Freelancer",
+        "company": {
+          "name": "UpWork.com"
+        },
+        "startDate": "2014-08-01",
+        "endDate": "2016-12-01"
+      },
+      {
+        "title": "Freelancer",
+        "company": {
+          "name": "Fiverr.com"
+        },
+        "startDate": "2013-03-01",
+        "endDate": "2014-06-01"
+      }
+    ]
+  },
+  "workshops": {
+    "title": "Workshops",
+    "data": [
+      {
+        "title": "InterHack",
+        "date": "2022-12-01",
+        "description": "HireAI - AI Powered tool to help recruiters easily filter job applicants by aggregating CVs by relevance according to the Job Description for the role. "
+      },
+      {
+        "title": "Business Startup Weekend",
+        "date": "2018-01-01",
+        "description": "Spread the Word - Web portal & Mobile application where users can view and capture ecological catastrophes on demand."
+      },
+      {
+        "title": "Nasa Space Apps Challange",
+        "date": "2017-01-01",
+        "description": "Lets go to the Beach - an interactive hybrid mobile application that shows nearby beaches and the UV index on that place based on Lat/Long coordinates."
+      },
+      {
+        "title": "Nasa Space Apps Challange",
+        "date": "2016-01-01",
+        "description": "Amaris - an interactive application that uses smart phone sensors to locate the moon at any time of the day."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "data": [
+      "JavaScript / TypeScript",
+      "NodeJS",
+      "NestJS",
+      "React",
+      "Redux",
+      "VueJS",
+      "Angular",
+      "PHP",
+      "Laravel",
+      "CodeIgniter",
+      "MySQL",
+      "Postgres",
+      "Mongo",
+      "Redis",
+      "AWS",
+      "Terraform",
+      "Serverless"
+    ]
+  },
+  "projects": {
+    "title": "Personal Projects",
+    "data": [
+      {
+        "title": "BinanceStorm",
+        "startDate": "2021-01-01",
+        "endDate": "2021-08-01",
+        "description": "CLI application that automates the process of trading cryptocurrencies through Binance depending on a configurable profit/loss margin"
+      },
+      {
+        "title": "Kia.mk",
+        "startDate": "2020-07-01",
+        "endDate": "2020-09-01",
+        "description": "Official KIA Motors Macedonia website"
+      },
+      {
+        "title": "Contentbear.co",
+        "startDate": "2019-07-01",
+        "endDate": "2021-08-01",
+        "description": "Simple, fast and reliable tool that can pull every CC from a Youtube Video and Every Single AutoCC that Youtube can generate"
+      },
+      {
+        "title": "Gram.gg / TBNGram.io",
+        "startDate": "2018-02-01",
+        "endDate": "2018-10-01",
+        "description": "Instagram automation Web Application with variety of features. Accumulated over 3000 active users and over 10.000 Active Instagram Accounts in our system"
+      },
+      {
+        "title": "Viralbolt.net",
+        "startDate": "2015-08-01",
+        "endDate": "2016-02-01",
+        "description": "Traffic exchange service optimised to trick YouTube's and Dailymotion's algorithm"
+      }
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "data": [
+      {
+        "language": "Macedonian",
+        "proficiency": "Native Proficiency"
+      },
+      {
+        "language": "English",
+        "proficiency": "Full Professional Proficiency"
+      }
+    ]
+  }
+}
