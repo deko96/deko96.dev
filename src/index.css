@@ -63,13 +63,25 @@ h6 {
 .content {
   padding: 2rem;
   display: grid;
+  grid-row: auto;
+}
+
+.content > div {
+  display: grid;
   grid-template-columns: 100%;
+  column-gap: 3rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
 }
 
 @media only screen and (min-width: 800px) {
-  .content {
+  .content > div {
     grid-template-columns: 55% 40%;
-    column-gap: 3rem;
   }
 }
 

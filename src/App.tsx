@@ -28,14 +28,16 @@ const App: FC = () => {
         <div ref={rootRef}>
           <Header {...componentsData.header} />
           <div className="content">
-            <div className="left">
+            <div>
               <WorkExperience {...componentsData.workExperience} />
-              <Workshops {...componentsData.workshops} />
+              <div>
+                <Skills {...componentsData.skills} />
+                <Languages {...componentsData.languages} />
+              </div>
             </div>
-            <div className="right">
-              <Skills {...componentsData.skills} />
+            <div>
+              <Workshops {...componentsData.workshops} />
               <Projects {...componentsData.projects} />
-              <Languages {...componentsData.languages} />
             </div>
           </div>
           <DownloadPDF contentRef={rootRef} />
