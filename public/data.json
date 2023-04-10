@@ -136,6 +136,12 @@
       "Redux",
       "VueJS",
       "Angular",
+      "Tailwind",
+      "Material UI",
+      "ThreeJS",
+      "PixiJS",
+      "Antd",
+      "Bootstrap",
       "PHP",
       "Laravel",
       "CodeIgniter",
@@ -145,7 +151,11 @@
       "Redis",
       "AWS",
       "Terraform",
-      "Serverless"
+      "Serverless",
+      "MVC",
+      "MVVM",
+      "Micro services",
+      "EDA"
     ]
   },
   "projects": {
