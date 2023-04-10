@@ -36,8 +36,8 @@ export const Header: FC<HeaderProps> = ({
           return (
             <li key={type} className="item">
               <a href={href} target="_blank" rel="noreferrer">
-                <span>{text}</span>
                 <Icon />
+                <span>{text}</span>
               </a>
             </li>
           );

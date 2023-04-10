@@ -1,17 +1,29 @@
 .header {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   padding: 2rem;
   justify-content: space-between;
-  align-items: center;
   border-bottom: 2px solid var(--primary-color);
 }
 
+@media only screen and (min-width: 800px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .header .who-am-i {
+    max-width: 300px;
+  }
+}
+
 .header .photo {
-  width: 132px;
-  height: 132px;
+  width: 256px;
+  height: 256px;
   border-radius: 50%;
   border: 5px solid var(--primary-color);
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .header h1 {
@@ -24,14 +36,11 @@
   font-weight: normal;
 }
 
-.header div {
-  max-width: 300px;
-}
-
 .header .contacts {
   list-style: none;
   line-height: 1.5rem;
   padding: 0;
+  margin: 0;
 }
 
 .header .contacts .item a,
@@ -39,7 +48,6 @@
 .header .contacts .item a:active {
   color: var(--text-color);
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   gap: 10px;
 }
