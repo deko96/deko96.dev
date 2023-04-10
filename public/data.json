@@ -2,7 +2,7 @@
   "header": {
     "headline": "Dejan Bozhinoski",
     "title": "Senior Web Engineer",
-    "subtitle": "Enthusiastic geek with 6+ years of web development experience",
+    "intro": "Coding is my passion, and I love seeing projects come to life on the web. Whether I'm working on a simple website or a complex web application, I approach each project with enthusiasm and dedication, always striving to create an enjoyable and effective user experience.",
     "contacts": [
       {
         "type": "email",
@@ -30,8 +30,8 @@
       },
       {
         "type": "website",
-        "href": "https://deko.sh",
-        "text": "deko96.github.io"
+        "href": "https://deko96.dev",
+        "text": "deko96.dev"
       }
     ]
   },
@@ -128,33 +128,38 @@
   "skills": {
     "title": "Skills",
     "data": [
-      "JavaScript / TypeScript",
-      "NodeJS",
-      "NestJS",
-      "React",
-      "Redux",
-      "VueJS",
-      "Angular",
-      "Tailwind",
-      "Material UI",
-      "ThreeJS",
-      "PixiJS",
-      "Antd",
-      "Bootstrap",
-      "PHP",
-      "Laravel",
-      "CodeIgniter",
-      "MySQL",
-      "Postgres",
-      "Mongo",
-      "Redis",
-      "AWS",
-      "Terraform",
-      "Serverless",
-      "MVC",
-      "MVVM",
-      "Micro services",
-      "EDA"
+      { "title": "JavaScript / TypeScript" },
+      { "title": "React" },
+      { "title": "Redux" },
+      { "title": "Vue.js" },
+      { "title": "Angular" },
+      { "title": "Next.js" },
+      { "title": "Tailwind" },
+      { "title": "Material UI" },
+      { "title": "Antd" },
+      { "title": "Bootstrap" },
+      { "title": "ThreeJS" },
+      { "title": "PixiJS" },
+      { "title": "Webpack" },
+      { "title": "Vite" },
+      { "title": "Git", "background": "#1f486e" },
+      { "title": "NestJS", "background": "#1f486e" },
+      { "title": "PHP", "background": "#1f486e" },
+      { "title": "Laravel", "background": "#1f486e" },
+      { "title": "CodeIgniter", "background": "#1f486e" },
+      { "title": "MySQL", "background": "#1f486e" },
+      { "title": "PostgreSQL", "background": "#1f486e" },
+      { "title": "MongoDB", "background": "#1f486e" },
+      { "title": "Redis", "background": "#1f486e" },
+      { "title": "AWS", "background": "#1f486e" },
+      { "title": "Terraform", "background": "#1f486e" },
+      { "title": "Unix", "background": "#1f486e" },
+      { "title": "Ansible", "background": "#1f486e" },
+      { "title": "Serverless", "background": "#1f486e" },
+      { "title": "MVC", "background": "#1f486e" },
+      { "title": "MVVM", "background": "#1f486e" },
+      { "title": "Microservices", "background": "#1f486e" },
+      { "title": "EDA", "background": "#1f486e" }
     ]
   },
   "projects": {

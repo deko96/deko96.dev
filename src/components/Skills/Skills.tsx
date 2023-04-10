@@ -7,10 +7,10 @@ export const Skills: FC<ComponentsData["skills"]> = ({ title, data }) => {
     <section className="skills">
       <h2 className="uppercase">{title}</h2>
       <div className="items">
-        {data.map((skill) => {
+        {data.map(({ title, background }) => {
           return (
-            <div className="item" key={skill}>
-              {skill}
+            <div className="item" key={title} style={{ background }}>
+              {title}
             </div>
           );
         })}

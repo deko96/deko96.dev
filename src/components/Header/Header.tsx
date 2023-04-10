@@ -18,7 +18,7 @@ const ContactIconMap: Record<ContactType, IconType> = {
 export const Header: FC<HeaderProps> = ({
   headline,
   title,
-  subtitle,
+  intro,
   contacts,
 }) => {
   return (
@@ -26,7 +26,7 @@ export const Header: FC<HeaderProps> = ({
       <div className="who-am-i">
         <h1>{headline}</h1>
         <h6>{title}</h6>
-        <p>{subtitle}</p>
+        <p>{intro}</p>
       </div>
       <ul className="contacts">
         {contacts.map(({ type, text, href }) => {

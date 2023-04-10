@@ -22,7 +22,7 @@ export type Contact = {
 export type HeaderProps = {
   headline: string;
   title: string;
-  subtitle: string;
+  intro: string;
   contacts: Contact[];
 };
 
@@ -42,6 +42,11 @@ export type Workshop = {
   description: string;
 };
 
+export type Skill = {
+  title: string;
+  background: string;
+};
+
 export type Project = Omit<WorkExperience, "company"> & {
   description: string;
 };
@@ -55,7 +60,7 @@ export type ComponentsData = {
   header: HeaderProps;
   workExperience: GenericComponent<WorkExperience[]>;
   workshops: GenericComponent<Workshop[]>;
-  skills: GenericComponent<string[]>;
+  skills: GenericComponent<Skill[]>;
   projects: GenericComponent<Project[]>;
   languages: GenericComponent<Language[]>;
 };
