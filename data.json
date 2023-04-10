@@ -3,7 +3,6 @@
     "headline": "Dejan Bozhinoski",
     "title": "Senior Web Engineer",
     "subtitle": "Enthusiastic geek with 6+ years of web development experience",
-    "photoUrl": "/me.webp",
     "contacts": [
       {
         "type": "email",
@@ -136,6 +135,12 @@
       "Redux",
       "VueJS",
       "Angular",
+      "Tailwind",
+      "Material UI",
+      "ThreeJS",
+      "PixiJS",
+      "Antd",
+      "Bootstrap",
       "PHP",
       "Laravel",
       "CodeIgniter",
@@ -145,7 +150,11 @@
       "Redis",
       "AWS",
       "Terraform",
-      "Serverless"
+      "Serverless",
+      "MVC",
+      "MVVM",
+      "Micro services",
+      "EDA"
     ]
   },
   "projects": {
