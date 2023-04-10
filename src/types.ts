@@ -23,7 +23,6 @@ export type HeaderProps = {
   headline: string;
   title: string;
   subtitle: string;
-  photoUrl: string;
   contacts: Contact[];
 };
 

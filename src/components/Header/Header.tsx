@@ -19,7 +19,6 @@ export const Header: FC<HeaderProps> = ({
   headline,
   title,
   subtitle,
-  photoUrl,
   contacts,
 }) => {
   return (
@@ -29,7 +28,6 @@ export const Header: FC<HeaderProps> = ({
         <h6>{title}</h6>
         <p>{subtitle}</p>
       </div>
-      <img src={photoUrl} alt={headline} className="photo" />
       <ul className="contacts">
         {contacts.map(({ type, text, href }) => {
           const Icon = ContactIconMap[type];
