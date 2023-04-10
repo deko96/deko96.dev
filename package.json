@@ -1,7 +1,7 @@
 {
   "name": "deko96.github.io",
   "version": "0.1.0",
-  "homepage": "https://deko96.github.io",
+  "homepage": "https://deko96.dev",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
