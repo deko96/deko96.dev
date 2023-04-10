@@ -1,5 +1,5 @@
 {
-  "name": "deko96.github.io",
+  "name": "deko96.dev",
   "version": "0.1.0",
   "homepage": "https://deko96.dev",
   "private": true,
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "echo deko96.dev > ./build/CNAME && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
