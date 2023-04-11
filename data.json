@@ -7,31 +7,37 @@
       {
         "type": "email",
         "href": "mailto:bozhinoski996@gmail.com",
-        "text": "bozhinoski996@gmail.com"
+        "text": "bozhinoski996@gmail.com",
+        "icon": "/icons/email.png"
       },
       {
         "type": "phone",
         "href": "tel:+38972311480",
-        "text": "+389 72 311 480"
+        "text": "+389 72 311 480",
+        "icon": "/icons/phone.png"
       },
       {
         "type": "location",
-        "text": "Skopje, Macedonia"
+        "text": "Skopje, Macedonia",
+        "icon": "/icons/location.png"
       },
       {
         "type": "linkedIn",
         "href": "https://linkedin.com/in/dejan-bo%C5%BEinoski-158454177",
-        "text": "linkedin.com/in/dejan-božinoski-158454177"
+        "text": "linkedin.com/in/dejan-božinoski-158454177",
+        "icon": "/icons/linked-in.png"
       },
       {
         "type": "github",
         "href": "https://github.com/deko96",
-        "text": "deko96"
+        "text": "deko96",
+        "icon": "/icons/github.png"
       },
       {
         "type": "website",
         "href": "https://deko96.dev",
-        "text": "deko96.dev"
+        "text": "deko96.dev",
+        "icon": "/icons/website.png"
       }
     ]
   },
@@ -85,18 +91,10 @@
       {
         "title": "Freelancer",
         "company": {
-          "name": "UpWork.com"
-        },
-        "startDate": "2014-08-01",
-        "endDate": "2016-12-01"
-      },
-      {
-        "title": "Freelancer",
-        "company": {
-          "name": "Fiverr.com"
+          "name": "Upwork.com & Fiverr.com"
         },
         "startDate": "2013-03-01",
-        "endDate": "2014-06-01"
+        "endDate": "2016-12-01"
       }
     ]
   },
@@ -130,21 +128,28 @@
     "data": [
       { "title": "JavaScript / TypeScript" },
       { "title": "React" },
+      { "title": "Next.js" },
       { "title": "Redux" },
       { "title": "Vue.js" },
       { "title": "Angular" },
-      { "title": "Next.js" },
+      { "title": "Polymer" },
       { "title": "Tailwind" },
       { "title": "Material UI" },
+      { "title": "daisyUI" },
       { "title": "Antd" },
       { "title": "Bootstrap" },
-      { "title": "ThreeJS" },
+      { "title": "Three.js" },
       { "title": "PixiJS" },
       { "title": "Webpack" },
       { "title": "Vite" },
+      { "title": "Jest" },
+      { "title": "Vitest" },
+      { "title": "Cypress" },
       { "title": "Git", "background": "#1f486e" },
+      { "title": "Node.js", "background": "#1f486e" },
       { "title": "NestJS", "background": "#1f486e" },
       { "title": "PHP", "background": "#1f486e" },
+      { "title": "Wordpress", "background": "#1f486e" },
       { "title": "Laravel", "background": "#1f486e" },
       { "title": "CodeIgniter", "background": "#1f486e" },
       { "title": "MySQL", "background": "#1f486e" },
@@ -155,6 +160,7 @@
       { "title": "Terraform", "background": "#1f486e" },
       { "title": "Unix", "background": "#1f486e" },
       { "title": "Ansible", "background": "#1f486e" },
+      { "title": "Docker", "background": "#1f486e" },
       { "title": "Serverless", "background": "#1f486e" },
       { "title": "MVC", "background": "#1f486e" },
       { "title": "MVVM", "background": "#1f486e" },
@@ -170,6 +176,12 @@
         "startDate": "2021-01-01",
         "endDate": "2021-08-01",
         "description": "CLI application that automates the process of trading cryptocurrencies through Binance depending on a configurable profit/loss margin"
+      },
+      {
+        "title": "PBNBee",
+        "startDate": "2020-05-01",
+        "endDate": "2021-02-01",
+        "description": "A marketplace crafted particularly for SEO engineers offering them filtered seed sites to help them grow their search engine rank by taking advantage of the seed site."
       },
       {
         "title": "Kia.mk",
