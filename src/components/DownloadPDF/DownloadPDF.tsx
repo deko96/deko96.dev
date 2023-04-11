@@ -1,31 +1,48 @@
-import { FC, useCallback } from "react";
-import { AiOutlineDownload } from "react-icons/ai";
+import { FC, useCallback, useState } from "react";
+import { BsFilePdfFill } from "react-icons/bs";
+import { ImSpinner9 } from "react-icons/im";
 import { DownloadPDFButtonProps } from "../../types";
-import html2pdf from "html2pdf.js";
+import jsPDF from "jspdf";
 
 import "./DownloadPDF.css";
+import classNames from "classnames";
+
+const cv = new jsPDF({
+  orientation: "portrait",
+  unit: "mm",
+  format: "a4",
+  putOnlyUsedFonts: true,
+  compress: true,
+});
 
 export const DownloadPDF: FC<DownloadPDFButtonProps> = ({ contentRef }) => {
-  const handleDownloadClick = useCallback(() => {
+  const [isPreparing, setIsPreparing] = useState<boolean>(false);
+
+  const handleDownloadClick = useCallback(async () => {
     if (!contentRef.current) return;
-    html2pdf(contentRef.current, {
-      margin: 0,
-      filename: "CV.pdf",
-      image: { type: "jpeg", quality: 1 },
-      html2canvas: { scale: 4, dpi: 192, letterRendering: true },
-      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-      enableLinks: true,
-      pagebreak: { avoid: "section" },
+    setIsPreparing(true);
+
+    cv.html(contentRef.current, {
+      image: { type: "jpeg", quality: 0.9 },
+      html2canvas: {
+        scale: 0.205,
+        letterRendering: true,
+        async: true,
+      },
+      autoPaging: true,
+    }).then(() => {
+      cv.save("cv.pdf");
+      setIsPreparing(false);
     });
   }, [contentRef]);
 
   return (
     <button
-      className="download-pdf"
+      className={classNames("download-pdf", isPreparing ? "spin" : null)}
       title="Download as PDF"
       onClick={handleDownloadClick}
     >
-      <AiOutlineDownload />
+      {!isPreparing ? <BsFilePdfFill /> : <ImSpinner9 />}
     </button>
   );
 };

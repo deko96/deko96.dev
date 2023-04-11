@@ -1,19 +1,6 @@
 import { FC } from "react";
-import { ContactType, HeaderProps } from "../../types";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsTelephone, BsLinkedin, BsGithub, BsGlobe } from "react-icons/bs";
-import { BiCurrentLocation } from "react-icons/bi";
+import { HeaderProps } from "../../types";
 import "./Header.css";
-import { IconType } from "react-icons";
-
-const ContactIconMap: Record<ContactType, IconType> = {
-  github: BsGithub,
-  linkedIn: BsLinkedin,
-  website: BsGlobe,
-  phone: BsTelephone,
-  location: BiCurrentLocation,
-  email: AiOutlineMail,
-};
 
 export const Header: FC<HeaderProps> = ({
   headline,
@@ -29,12 +16,11 @@ export const Header: FC<HeaderProps> = ({
         <p>{intro}</p>
       </div>
       <ul className="contacts">
-        {contacts.map(({ type, text, href }) => {
-          const Icon = ContactIconMap[type];
+        {contacts.map(({ type, text, href, icon }) => {
           return (
             <li key={type} className="item">
               <a href={href} target="_blank" rel="noreferrer">
-                <Icon />
+                <img src={icon} alt={type} />
                 <span>{text}</span>
               </a>
             </li>

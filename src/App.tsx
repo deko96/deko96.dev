@@ -25,23 +25,25 @@ const App: FC = () => {
       {!componentsData ? (
         "Loading..."
       ) : (
-        <div ref={rootRef}>
-          <Header {...componentsData.header} />
-          <div className="content">
-            <div>
-              <WorkExperience {...componentsData.workExperience} />
-              <div>
-                <Skills {...componentsData.skills} />
-                <Languages {...componentsData.languages} />
+        <>
+          <div ref={rootRef}>
+            <Header {...componentsData.header} />
+            <div className="content">
+              <div style={{ pageBreakAfter: "always" }}>
+                <WorkExperience {...componentsData.workExperience} />
+                <div>
+                  <Skills {...componentsData.skills} />
+                  <Languages {...componentsData.languages} />
+                </div>
               </div>
-            </div>
-            <div>
-              <Workshops {...componentsData.workshops} />
-              <Projects {...componentsData.projects} />
+              <div>
+                <Projects {...componentsData.projects} />
+                <Workshops {...componentsData.workshops} />
+              </div>
             </div>
           </div>
           <DownloadPDF contentRef={rootRef} />
-        </div>
+        </>
       )}
     </div>
   );

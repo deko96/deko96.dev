@@ -16,6 +16,7 @@ export type ContactType =
 export type Contact = {
   type: ContactType;
   text: string;
+  icon: string;
   href?: string;
 };
 
