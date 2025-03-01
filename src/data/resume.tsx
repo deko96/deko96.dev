@@ -66,6 +66,16 @@ export const DATA = {
   },
   work: [
     {
+      company: "Intertec",
+      badges: [],
+      href: "https://intertec.io",
+      location: "Skopje, MK",
+      title: "Technology Expert",
+      logoUrl: "/work/intertec.png",
+      start: "July 2021",
+      end: "Present",
+    },
+    {
       company: "Culturetec",
       badges: [],
       href: "https://culturetec.co",
@@ -73,7 +83,7 @@ export const DATA = {
       title: "TypeScript Tech Lead",
       logoUrl: "/work/culturetec.svg",
       start: "October 2023",
-      end: "Present",
+      end: "February 2025",
     },
     {
       company: "Brainster Next College",
@@ -84,26 +94,6 @@ export const DATA = {
       logoUrl: "/work/brainster.webp",
       start: "November 2023",
       end: "January 2024",
-    },
-    {
-      company: "Intertec",
-      badges: [],
-      href: "https://intertec.io",
-      location: "Skopje, MK",
-      title: "Senior JavaScript Developer",
-      logoUrl: "/work/intertec.png",
-      start: "March 2022",
-      end: "Present",
-    },
-    {
-      company: "Intertec",
-      badges: [],
-      href: "https://intertec.io",
-      location: "Skopje, MK",
-      title: "Intermediate JavaScript Developer",
-      logoUrl: "/work/intertec.png",
-      start: "July 2021",
-      end: "March 2022",
     },
     {
       company: "Digital Orange",
